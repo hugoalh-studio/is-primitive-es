@@ -7,6 +7,9 @@ export type Primitive = bigint | boolean | number | string | symbol | null | und
  * @param {unknown} item Item that need to determine.
  * @returns {item is Primitive} Determine result.
  * @example
+ * isPrimitive({});
+ * //=> false
+ * @example
  * isPrimitive(new Headers());
  * //=> false
  * @example

@@ -117,6 +117,10 @@ A TypeScript module to determine whether the item is a primitive.
 ## ✍️ Example
 
 - ```ts
+  isPrimitive({});
+  //=> false
+  ```
+- ```ts
   isPrimitive(new Headers());
   //=> false
   ```
