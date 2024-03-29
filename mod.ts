@@ -1,5 +1,5 @@
 /**
- * Type of the JavaScript primitive.
+ * Type of the primitive.
  */
 export type Primitive = bigint | boolean | number | string | symbol | null | undefined;
 /**
