@@ -22,7 +22,7 @@ A TypeScript module to determine whether the item is a primitive.
 
 ### 🔗 Other Edition
 
-- [TypeScript](https://github.com/hugoalh-studio/is-primitive-ts)
+- [JavaScript](https://github.com/hugoalh-studio/is-primitive-js)
 
 ## 🔰 Usage
 
