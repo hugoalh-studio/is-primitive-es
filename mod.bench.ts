@@ -1,31 +1,31 @@
 import { isPrimitive } from "./mod.ts";
-Deno.bench("False Array", { permissions: "none" }, () => {
+Deno.bench("False 1", { permissions: "none" }, () => {
 	isPrimitive([]);
 });
-Deno.bench("False Header", { permissions: "none" }, () => {
+Deno.bench("False 2", { permissions: "none" }, () => {
 	isPrimitive(new Headers());
 });
-Deno.bench("False Map", { permissions: "none" }, () => {
+Deno.bench("False 3", { permissions: "none" }, () => {
 	isPrimitive(new Map());
 });
-Deno.bench("False Object", { permissions: "none" }, () => {
+Deno.bench("False 4", { permissions: "none" }, () => {
 	isPrimitive({});
 });
-Deno.bench("False Set", { permissions: "none" }, () => {
+Deno.bench("False 5", { permissions: "none" }, () => {
 	isPrimitive(new Set());
 });
-Deno.bench("True BigInt", { permissions: "none" }, () => {
+Deno.bench("True 1", { permissions: "none" }, () => {
 	isPrimitive(123n);
 });
-Deno.bench("True Boolean", { permissions: "none" }, () => {
+Deno.bench("True 2", { permissions: "none" }, () => {
 	isPrimitive(true);
 });
-Deno.bench("True Number", { permissions: "none" }, () => {
+Deno.bench("True 3", { permissions: "none" }, () => {
 	isPrimitive(123.456);
 });
-Deno.bench("True String", { permissions: "none" }, () => {
+Deno.bench("True 4", { permissions: "none" }, () => {
 	isPrimitive("qwerty");
 });
-Deno.bench("True Symbol", { permissions: "none" }, () => {
+Deno.bench("True 5", { permissions: "none" }, () => {
 	isPrimitive(Symbol("test"));
 });
