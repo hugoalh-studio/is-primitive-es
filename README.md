@@ -73,9 +73,9 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
 
 ### 🛡️ Permissions
 
-This module does not require any permission.
+*This module does not require any permission.*
 
-## 🧩 API
+## 🧩 APIs
 
 - ```ts
   function isPrimitive(item: unknown): item is Primitive;
@@ -91,7 +91,7 @@ This module does not require any permission.
 > - [Deno CLI `deno doc`](https://deno.land/manual/tools/documentation_generator)
 > - [JSR](https://jsr.io/@hugoalh/is-primitive)
 
-## ✍️ Example
+## ✍️ Examples
 
 - ```ts
   isPrimitive({});
