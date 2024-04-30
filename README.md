@@ -25,7 +25,7 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
 
 ### #️⃣ Registries Identifier
 
-<table>
+<table><tbody align="left">
 <tr>
 <th>JSR</th>
 <td width="100%">
@@ -46,7 +46,7 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
 
 </td>
 </tr>
-</table>
+</tbody></table>
 
 > **ℹ️ Note**
 >
