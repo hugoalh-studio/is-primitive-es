@@ -1,4 +1,4 @@
-import { assertEquals } from "STD/assert/assert-equals";
+import { assertEquals } from "STD/assert/equals";
 import { isPrimitive } from "./mod.ts";
 Deno.test("False 1", { permissions: "none" }, () => {
 	assertEquals(isPrimitive([]), false);
