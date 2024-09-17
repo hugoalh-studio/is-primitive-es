@@ -12,42 +12,39 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
 
 ### 🎯 Targets
 
-|  | **Registry - JSR** | **Registry - NPM** | **Remote Import** |
+|  | **[Registry - JSR](https://jsr.io/docs/using-packages)** | **Registry - NPM** | **Remote Import** |
 |:--|:--|:--|:--|
-| **[Bun](https://bun.sh/)** >= v1.1.0 | [✔️ `node_modules`](https://jsr.io/docs/npm-compatibility) | [✔️ Specifier `npm:`](https://bun.sh/docs/runtime/autoimport) | ❌ |
-| **[Cloudflare Workers](https://workers.cloudflare.com/)** | [✔️ `node_modules`](https://jsr.io/docs/with/cloudflare-workers) | [✔️ `node_modules`](https://docs.npmjs.com/using-npm-packages-in-your-projects) | ❌ |
-| **[Deno](https://deno.land/)** >= v1.42.0 | [✔️ Specifier `jsr:`](https://jsr.io/docs/with/deno) | [✔️ Specifier `npm:`](https://docs.deno.com/runtime/manual/node/npm_specifiers) | [✔️](https://docs.deno.com/runtime/manual/basics/modules/#remote-import) |
-| **[NodeJS](https://nodejs.org/)** >= v16.13.0 | [✔️ `node_modules`](https://jsr.io/docs/with/node) | [✔️ `node_modules`](https://docs.npmjs.com/using-npm-packages-in-your-projects) | ❌ |
+| **[Bun](https://bun.sh/)** >= v1.1.0 | ❓ | ✔️ | ❌ |
+| **[Cloudflare Workers](https://workers.cloudflare.com/)** | ❓ | ✔️ | ❌ |
+| **[Deno](https://deno.land/)** >= v1.42.0 | ✔️ | ✔️ | [✔️](https://docs.deno.com/runtime/fundamentals/modules/#https-imports) |
+| **[NodeJS](https://nodejs.org/)** >= v16.13.0 | ❓ | ✔️ | ❌ |
 
-> **ℹ️ Note**
->
-> It is possible to use this module in other methods/ways which not listed in here, however it is not officially supported.
+> [!NOTE]
+> - It is possible to use this module in other methods/ways which not listed in here, however those are not officially supported.
 
 ### #️⃣ Registries Identifier
 
 - **JSR:**
   ```
-  @hugoalh/is-primitive
+  @hugoalh/is-primitive[@{Tag}]
   ```
 - **NPM:**
   ```
-  @hugoalh/is-primitive
+  @hugoalh/is-primitive[@{Tag}]
   ```
 
-> **ℹ️ Note**
->
-> - Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+> [!NOTE]
+> - Although it is recommended to import the entire module, it is also able to import part of the module with sub export if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
 > - It is recommended to use this module with tag for immutability.
 
 ### #️⃣ Remote Import Paths
 
-- **GitHub Raw:** (Require Tag)
+- **GitHub Raw:**
   ```
-  https://raw.githubusercontent.com/hugoalh-studio/is-primitive-es/${Tag}/mod.ts
+  https://raw.githubusercontent.com/hugoalh-studio/is-primitive-es/{Tag}/mod.ts
   ```
 
-> **ℹ️ Note**
->
+> [!NOTE]
 > - Although it is recommended to import the entire module with the main path `mod.ts`, it is also able to import part of the module with sub path if available, but do not import if:
 >
 >   - it's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`), or
@@ -57,7 +54,7 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
 >   These elements are not considered part of the public API, thus no stability is guaranteed for them.
 > - Although there have 3rd party services which provide enhanced, equal, or similar methods/ways to remote import the module, beware these services maybe inject unrelated elements and thus affect the security.
 
-### 🛡️ Permissions
+### 🛡️ Require Runtime Permissions
 
 *This module does not require any permission.*
 
@@ -70,12 +67,10 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
   type Primitive = bigint | boolean | number | string | symbol | null | undefined;
   ```
 
-> **ℹ️ Note**
->
-> For the prettier documentation, can visit via:
->
-> - [Deno CLI `deno doc`](https://deno.land/manual/tools/documentation_generator)
-> - [JSR](https://jsr.io/@hugoalh/is-primitive)
+> [!NOTE]
+> - For the prettier documentation, can visit via:
+>   - [Deno CLI `deno doc`](https://deno.land/manual/tools/documentation_generator)
+>   - [JSR](https://jsr.io/@hugoalh/is-primitive)
 
 ## ✍️ Examples
 
