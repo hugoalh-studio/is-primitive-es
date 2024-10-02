@@ -30,11 +30,11 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
   ```
 - **JSR:**
   ```
-  @hugoalh/is-primitive[@{Tag}]
+  [jsr:]@hugoalh/is-primitive[@{Tag}]
   ```
 - **NPM:**
   ```
-  @hugoalh/is-primitive[@{Tag}]
+  [npm:]@hugoalh/is-primitive[@{Tag}]
   ```
 
 > [!NOTE]
