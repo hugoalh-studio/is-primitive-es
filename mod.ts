@@ -6,18 +6,26 @@ export type Primitive = bigint | boolean | number | string | symbol | null | und
  * Determine whether the item is a primitive.
  * @param {unknown} item Item that need to determine.
  * @returns {item is Primitive} Determine result.
- * @example
+ * @example Example 1
+ * ```ts
  * isPrimitive({});
  * //=> false
- * @example
+ * ```
+ * @example Example 2
+ * ```ts
  * isPrimitive(new Headers());
  * //=> false
- * @example
+ * ```
+ * @example Example 3
+ * ```ts
  * isPrimitive(true);
  * //=> true
- * @example
+ * ```
+ * @example Example 4
+ * ```ts
  * isPrimitive(123n);
  * //=> true
+ * ```
  */
 export function isPrimitive(item: unknown): item is Primitive {
 	switch (typeof item) {
