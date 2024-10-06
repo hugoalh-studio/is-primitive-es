@@ -16,7 +16,7 @@ An ES (JavaScript & TypeScript) module to determine whether the item is a primit
 |:--|:--|:--|:--|
 | **[Bun](https://bun.sh/)** >= v1.1.0 | ❌ | ❓ | ✔️ |
 | **[Cloudflare Workers](https://workers.cloudflare.com/)** | ❌ | ❓ | ✔️ |
-| **[Deno](https://deno.land/)** >= v1.42.0 | ✔️ | ✔️ | [✔️](https://docs.deno.com/runtime/fundamentals/modules/#https-imports) |
+| **[Deno](https://deno.land/)** >= v1.42.0 | ✔️ | ✔️ | ✔️ |
 | **[NodeJS](https://nodejs.org/)** >= v16.13.0 | ❌ | ❓ | ✔️ |
 
 > [!NOTE]
