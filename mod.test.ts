@@ -1,32 +1,32 @@
 import { assertEquals } from "STD/assert/equals";
 import { isPrimitive } from "./mod.ts";
-Deno.test("False 1", { permissions: "none" }, () => {
+Deno.test("Array", { permissions: "none" }, () => {
 	assertEquals(isPrimitive([]), false);
 });
-Deno.test("False 2", { permissions: "none" }, () => {
-	assertEquals(isPrimitive(new Headers()), false);
-});
-Deno.test("False 3", { permissions: "none" }, () => {
-	assertEquals(isPrimitive(new Map()), false);
-});
-Deno.test("False 4", { permissions: "none" }, () => {
-	assertEquals(isPrimitive({}), false);
-});
-Deno.test("False 5", { permissions: "none" }, () => {
-	assertEquals(isPrimitive(new Set()), false);
-});
-Deno.test("True 1", { permissions: "none" }, () => {
+Deno.test("Big Integer", { permissions: "none" }, () => {
 	assertEquals(isPrimitive(123n), true);
 });
-Deno.test("True 2", { permissions: "none" }, () => {
+Deno.test("Boolean", { permissions: "none" }, () => {
 	assertEquals(isPrimitive(true), true);
 });
-Deno.test("True 3", { permissions: "none" }, () => {
+Deno.test("Headers", { permissions: "none" }, () => {
+	assertEquals(isPrimitive(new Headers()), false);
+});
+Deno.test("Map", { permissions: "none" }, () => {
+	assertEquals(isPrimitive(new Map()), false);
+});
+Deno.test("Number", { permissions: "none" }, () => {
 	assertEquals(isPrimitive(123.456), true);
 });
-Deno.test("True 4", { permissions: "none" }, () => {
+Deno.test("Plain Object", { permissions: "none" }, () => {
+	assertEquals(isPrimitive({}), false);
+});
+Deno.test("Set", { permissions: "none" }, () => {
+	assertEquals(isPrimitive(new Set()), false);
+});
+Deno.test("String", { permissions: "none" }, () => {
 	assertEquals(isPrimitive("qwerty"), true);
 });
-Deno.test("True 5", { permissions: "none" }, () => {
+Deno.test("Symbol", { permissions: "none" }, () => {
 	assertEquals(isPrimitive(Symbol("test")), true);
 });
