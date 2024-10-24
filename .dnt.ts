@@ -18,15 +18,15 @@ await invokeDenoNodeJSTransformer({
 			"is",
 			"primitive"
 		],
-		homepage: "https://github.com/hugoalh-studio/is-primitive-es#readme",
+		homepage: "https://github.com/hugoalh/is-primitive-es#readme",
 		bugs: {
-			url: "https://github.com/hugoalh-studio/is-primitive-es/issues"
+			url: "https://github.com/hugoalh/is-primitive-es/issues"
 		},
 		license: "MIT",
 		author: "hugoalh",
 		repository: {
 			type: "git",
-			url: "git+https://github.com/hugoalh-studio/is-primitive-es.git"
+			url: "git+https://github.com/hugoalh/is-primitive-es.git"
 		},
 		scripts: {
 		},
